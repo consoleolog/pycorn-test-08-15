@@ -78,7 +78,7 @@ gc = gspread.authorize(credentials)
 spreadsheet = gc.open_by_key(st.secrets["gsheet_key"])
 
 # "datainput" 워크시트 선택
-sheet_input = spreadsheet.worksheet("datainput")
+sheet_input = spreadsheet.worksheet("pycon-test-0815")
 
 # 데이터 추가 함수 정의
 def append_input_data(name, feedback):
